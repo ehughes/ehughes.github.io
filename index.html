@@ -1,7 +1,181 @@
 <!DOCTYPE html>
-<meta http-equiv="refresh" content="0; URL=https://www.linkedin.com/in/wavenumber" />
-<html>
+<html http-equiv="Content-Language" content="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wavenumber LLC</title>
+
+  <style>
+   * {
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 400px;
+}
+
+.logo-container {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+    bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  opacity: 0.9;
+  z-index: 1;
+  padding: 10px;
+
+}
+
+.logo {
+  width: 100px; /* set the width of your logo */
+  height: auto;
+}
+
+.tagline {
+  font-family: "Myriad Pro Light", sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+  margin-top: 5px;
+  text-align: left;
+}
+
+
+
+.bold-text {
+  font-family: "Myriad Pro";
+  font-size: 30px;
+  
+
+}
+
+.regular-text {
+
+  font-family: Myriad Pro Light;
+  font-size: 20px;
+  font-weight: normal;
+  color: #CCCCCC;
+}
+
+.content {
+  font-family: "Myriad Pro Light", sans-serif;
+  font-size: 24px;
+  color: #DDDDDD;
+  font-weight: bold;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  padding-top: 1px; /* add 20 pixels of padding around the content */
+  padding-left: 20px; /* add 20 pixels of padding around the content */
+
+  top: 200px;
+  left: 10px; /* set the same value as the left property of .logo-container */
+  transform: translate(5%, 0%);
+  max-width: 75%; /* set the maximum width of the text container to 33% */
+  backdrop-filter: blur(5px);
+}
+
+body {
+  margin: 0;
+  font-family: Myriad Pro Light;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+
+.bottom_nav {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    border-top: 1px solid #222222;
+}
+
+.social-icon {
+  font-size: 24px;
+  color: #444444;
+  margin-left: 20px;
+}
+
+.bottom_text {
+font-family: "Myriad Pro Light", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: auto;
+}
+
+.social-icon:hover {
+  color: #1da1f2; /* Twitter blue */
+}
+
+.social-icon:last-child {
+  margin-right: 0;
+}
+
+.social-icon:nth-child(3) {
+  margin-left: 20px;
+}
+
+.social-icon:nth-child(1):hover {
+  color: #1da1f2; /* Gmail red */
+}
+
+.social-icon:nth-child(2):hover {
+  color: #1da1f2; /* Gmail red */
+}
+
+
+.social-icon:last-child {
+  margin-right: 0;
+}
+
+  </style>
+</head>
 <body>
-<h1>Redirecting...</h1>
+
+<script src="https://kit.fontawesome.com/73d3ed437d.js" crossorigin="anonymous"></script>
+
+  <div class="logo-container">
+    <img class="logo" src="assets/wn_logo_white.png" alt="wavenumber logo">
+	<p class="tagline">Create | Communicate | Serve</p>
+  </div>
+  
+  
+      <video autoplay muted loop id="myVideo">
+      <source src="assets/back.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+  
+    <div class="content">
+      <p class="bold-text">A Full-Stack Product Design Company</p>   
+
+	 <p class="regular-text">We use physics, materials, industrial design, electronics, software and manufacturing to translate concepts into reality. </p>
+    </div>
+
+<div class="bottom_nav">
+  <div class="bottom_text">Engage</div>
+  <div class="social-icons">
+    <a href="https://twitter.com/emh203" class="social-icon"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.linkedin.com/in/wavenumber/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+    <a href="#" onclick="location.href='mailto:'+String.fromCharCode(101,104,117,103,104,101,115,64,119,97,118,101,110,117,109,98,101,114,46,110,101,116); return false;" class="social-icon"><i class="fas fa-envelope"></i></a>
+  </div>
+</div>
+
 </body>
 </html>
