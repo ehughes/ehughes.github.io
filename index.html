@@ -12,6 +12,8 @@
 
 html, body {
   min-height: 400px;
+  min-width: 600px;
+  overflow-x: hidden
 }
 
 .logo-container {
@@ -28,6 +30,14 @@ html, body {
 
 }
 
+
+.logo-container
+{
+  color: #1da1f2; /* Twitter blue */
+  cursor: pointer;
+}
+
+
 .logo {
   width: 100px; /* set the width of your logo */
   height: auto;
@@ -42,9 +52,20 @@ html, body {
 }
 
 
-h1 {
+h1 
+{
+  font-family: "Myriad Pro Light";
+  font-size: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+ 
+ h2
+ {
   font-family: "Myriad Pro Light";
   font-size: 32px;
+  margin-top: 10px;
+  margin-bottom: 10px;
  }
 
 .regular-text {
@@ -62,17 +83,40 @@ h1 {
   font-weight: bold;
   position: absolute;
   background: rgba(0, 0, 0, 0.5);
-  padding-top: 1px; /* add 20 pixels of padding around the content */
+  padding-top: 20px; /* add 20 pixels of padding around the content */
   padding-left: 20px; /* add 20 pixels of padding around the content */
   padding-right: 20px; /* add 20 pixels of padding around the content */
+  padding-bottom: 20px; /* add 20 pixels of padding around the content */
 
   top: 200px;
   left: 10px; /* set the same value as the left property of .logo-container */
-  right: 10px; /* set the same value as the left property of .logo-container */
+  right: 20px; /* set the same value as the left property of .logo-container */
   
-  transform: translate(5%, 0%);
+  transform: translate(5%,0);
   max-width: 75%; /* set the maximum width of the text container to 33% */
   backdrop-filter: blur(5px);
+  overflow: hidden;
+
+  transition: transform 0.2s ease ;
+
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: #333;
+  
+  margin-top: 1px; /* add 20 pixels of padding around the content */
+  margin-bottom: 10px; /* add 20 pixels of padding around the content */
+
+}
+
+#engage_content {
+
+  transform: translate(-100%, 0%);
+  background: rgba(0, 0, 0, 0.0);
+  backdrop-filter: blur(0px);
+
 }
 
 body {
@@ -108,9 +152,9 @@ body {
 
 
 .social-icon {
-  font-size: 24px;
+  font-size: 32px;
   color: #acb5bb;
-  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .bottom_text {
@@ -118,7 +162,15 @@ font-family: "Myriad Pro Light", sans-serif;
   font-size: 24px;
   font-weight: bold;
   margin-right: auto;
+
 }
+
+.bottom_text:hover
+{
+  color: #1da1f2; /* Twitter blue */
+  cursor: pointer;
+}
+
 
 .social-icon:hover {
   color: #1da1f2; /* Twitter blue */
@@ -129,8 +181,19 @@ font-family: "Myriad Pro Light", sans-serif;
 }
 
 .social-icon:nth-child(3) {
-  margin-left: 20px;
+  margin-left:5px;
 }
+
+.social-icon:nth-child(2) {
+  margin-left:5px;
+}
+
+.social-icon:nth-child(1) {
+  margin-left:5px;
+}
+
+
+
 
 .social-icon:nth-child(1):hover {
   color: #1da1f2; /* Gmail red */
@@ -145,14 +208,48 @@ font-family: "Myriad Pro Light", sans-serif;
   margin-right: 0;
 }
 
-  </style>
+</style>
 </head>
 <body>
 
   <script src="https://kit.fontawesome.com/73d3ed437d.js" crossorigin="anonymous"></script>
   
+
+  <script>
+
+   var currentContent = "intro_content";
+
+   show_content(currentContent)
+
+   function show_content(content)
+   {
+        hide_content(currentContent)
+        currentContent = content;
+
+        var c = document.getElementById(content); 
+        c.style.transform =     "translateX(5%)";
+        c.style.background =    "rgba(0, 0, 0, 0.5)";
+        c.style.backdropFilter = "blur(10px)";
+   }
+
+   function hide_content(content)
+   {
+        var c = document.getElementById(content); 
+        c.style.transform =     "translateX(-100%)";
+        c.style.background =    "rgba(0, 0, 0, 0.0)";
+        c.style.backdropFilter = "blur(0px)";
+   }
+
+   function engage(show)
+   {
+       show_content("engage_content")
+   }
+
+  </script>
+  
+
   <div class="logo-container">
-    <img class="logo" src="assets/wn_logo_white.png" alt="wavenumber logo">
+    <img class="logo" onclick=show_content("intro_content") src="assets/wn_logo_white.png" alt="wavenumber logo">
 	<p class="tagline">Wavenumber LLC</p>
   </div>
   
@@ -161,19 +258,28 @@ font-family: "Myriad Pro Light", sans-serif;
       Your browser does not support HTML5 video.
     </video>
   
-    <div class="content">
-      <h1>A full-stack product design company</h1>   
+    <div class="content" id="intro_content">
+      <h2>A full-stack product design company</h2>   
    	  <p class="regular-text">We use physics, materials, industrial design, electronics, software and manufacturing to translate concepts into reality. </p>
     </div>
 
-<div class="bottom_nav">
-  <div class="bottom_text">Engage</div>
-  <div class="social-icons">
-    <a href="https://twitter.com/emh203" class="social-icon"><i class="fab fa-twitter"></i></a>
-    <a href="https://www.linkedin.com/in/wavenumber/" class="social-icon"><i class="fab fa-linkedin"></i></a>
-    <a href="#" onclick="location.href='mailto:'+String.fromCharCode(101,104,117,103,104,101,115,64,119,97,118,101,110,117,109,98,101,114,46,110,101,116); return false;" class="social-icon"><i class="fas fa-envelope"></i></a>
-  </div>
-</div>
+    <div class="content" id="engage_content">
+      <h2>Engage</h2>  
+ 
+   	  <hr>
+          <a href="https://twitter.com/emh203" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/wavenumber/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+          <a href="#" onclick="location.href='mailto:'+String.fromCharCode(101,104,117,103,104,101,115,64,119,97,118,101,110,117,109,98,101,114,46,110,101,116); return false;" class="social-icon"><i class="fas fa-envelope"></i></a>
+    </div>
+
+    <div class="bottom_nav">
+      <div class="bottom_text" onclick=engage()>Engage</div>
+      <div class="social-icons">
+        <a href="https://twitter.com/emh203" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/wavenumber/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        <a href="#" onclick="location.href='mailto:'+String.fromCharCode(101,104,117,103,104,101,115,64,119,97,118,101,110,117,109,98,101,114,46,110,101,116); return false;" class="social-icon"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
 
 </body>
 </html>
