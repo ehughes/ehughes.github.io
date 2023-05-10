@@ -15,7 +15,6 @@
 }
 
 html, body {
-  min-height: 400px;
 
 }
 
@@ -23,20 +22,31 @@ html, body {
   position: fixed;
   top: 10px;
   left: 10px;
-  bottom: 10px;
-  display: flex;
+  
+  display: inline-flex;
   flex-direction: column;
   align-items: left;
   opacity: 0.9;
   z-index: 1;
-  padding: 10px;
+  padding: 0px;
+  cursor: pointer;
+  
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+
+  -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 
 }
 
-
-.logo-container
-{
-  cursor: pointer;
+.logo-container:active{
+  touch-action: manipulation;
+  outline: none !important;
 }
 
 
@@ -56,7 +66,7 @@ html, body {
 
 h1 
 {
-  font-family: "Myriad Pro Light";
+  font-family: "Myriad Pro Light", sans-serif;;
   font-size: 40px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -64,7 +74,7 @@ h1
  
  h2
  {
-  font-family: "Myriad Pro Light";
+  font-family: "Myriad Pro Light", sans-serif;;
   font-size: 32px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -72,14 +82,14 @@ h1
 
 .regular-text {
 
-  font-family: Myriad Pro Light;
+  font-family: "Myriad Pro Light", sans-serif;;
   font-size: 16px;
   font-weight: normal;
   color: #CCCCCC;
 }
 
 .content {
-  font-family: "Myriad Pro Light", sans-serif;
+  font-family: "Myriad Pro Light", "sans-serif";
   font-size: 24px;
   color: #DDDDDD;
   font-weight: bold;
@@ -141,7 +151,7 @@ body {
     position: fixed;
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
+   
     width: 100%;
     padding: 20px;
     z-index: 1;
@@ -164,14 +174,16 @@ font-family: "Myriad Pro Light", sans-serif;
   font-size: 24px;
   font-weight: bold;
   margin-right: auto;
+  color: #acb5bb;
 
 }
 
 .bottom_text:hover
 {
-  color: #1da1f2; /* Twitter blue */
+  color: #acb5bb;
   cursor: pointer;
 }
+
 
 
 .social-icon:hover {
@@ -204,6 +216,10 @@ a:visited
   color: #acb5bb;
 }
 
+a:focus
+{
+  color: #acb5bb;
+}
 a:hover {
   color: #1da1f2; /* Gmail red */
 }
@@ -237,6 +253,7 @@ a:hover {
 
    function show_content(content)
    {
+
         hide_content(currentContent)
         currentContent = content;
 
@@ -262,7 +279,7 @@ a:hover {
   </script>
   
 
-  <div class="logo-container">
+  <div class="logo-container" >
     <img class="logo" onclick=show_content("intro_content") src="assets/wn_logo_white.png" alt="wavenumber logo">
    	<p class="tagline">Wavenumber LLC</p>
   </div>
