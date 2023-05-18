@@ -128,6 +128,10 @@ h1
 
   transition: transform 0.2s ease ;
 
+  max-height: calc(80vh); /* Adjust the height based on your needs, subtracting the height of the bottom_nav */
+  overflow: auto;
+  padding-bottom: 80px; /* Adjust the value to match the height of the bottom_nav */
+
 }
 p {
   padding: 0;
@@ -161,6 +165,13 @@ hr {
 
 }
 
+.padding_div {
+  padding-bottom: 200px; /* add 20 pixels of padding around the content */
+    background: rgba(0, 0, 0, 1.0);
+
+}
+
+
 
 #engage_content {
 
@@ -189,7 +200,7 @@ body {
 .bottom_nav {
     position: fixed;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.9);
    
     width: 100%;
     padding: 20px;
@@ -280,6 +291,8 @@ a:hover {
 
 
 
+
+
 </style>
 </head>
 <body>
@@ -357,9 +370,12 @@ a:hover {
 		</div>
 
 	  
+
 	  
     </div>
 
+	
+	
     <div class="content" id="engage_content">
       <h2>Engage</h2>  
  
@@ -369,6 +385,9 @@ a:hover {
           <a href="#" onclick="location.href='mailto:'+String.fromCharCode(101,104,117,103,104,101,115,64,119,97,118,101,110,117,109,98,101,114,46,110,101,116); return false;" class="social-icon"><i class="fas fa-envelope"></i></a>
     </div>
 
+	<div class ="padding_div">
+
+	</div>
     <div class="bottom_nav">
       <div class="bottom_text" onclick=engage()>Engage</div>
       <div class="social-icons">
