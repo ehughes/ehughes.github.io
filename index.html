@@ -3,309 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <meta http-equiv="refresh" content="300">
   <meta http-equiv="expires" content="0">
-
   <title>Wavenumber LLC</title>
 
-  <style>
-   * {
-  box-sizing: border-box;
-}
+  <link rel="stylesheet" href="style/wn.css">
 
-html, body {
-
-}
-
-.logo-container {
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  
-  display: inline-flex;
-  flex-direction: column;
-  align-items: left;
-  opacity: 0.9;
-  z-index: 1;
-  padding: 0px;
-  cursor: pointer;
-  
-  touch-action: manipulation;
-  -webkit-tap-highlight-color: transparent;
-
-  -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-
-}
-
-.logo-container:active{
-  touch-action: manipulation;
-  outline: none !important;
-}
-
-
-.logo {
-  width: 100px; /* set the width of your logo */
-  height: auto;
-}
-
-.tagline {
-  font-family: "Myriad Pro Light", sans-serif;
-  font-size: 15px;
-  color: #ffffff;
-  margin-top: 5px;
-  text-align: left;
-}
-
-
-
-h1 
-{
-  font-family: "Myriad Pro Light", sans-serif;;
-  font-size: 40px;
-  margin-top:  2px;
-  margin-bottom:  2px;
-}
- 
- h2
- {
-  font-family: "Myriad Pro Light", sans-serif;;
-  font-size: 28px;
-  margin-top: 2px;
-  margin-bottom:  2px;
- }
-
- h3
- {
-  font-family: "Myriad Pro Light", sans-serif;;
-  font-size: 16px;
-  margin-top:  2px;
-  margin-bottom:  2px;
- }
- 
-.regular-text {
-
-  font-family: "Myriad Pro Light", sans-serif;;
-  font-size: 12px;
-  font-weight: normal;
-  color: #CCCCCC;
-}
-
-.short {
-  font-family: "Myriad Pro Light", sans-serif;;
-  font-size: 12px;
-  font-weight: normal;
-  color: #CCCCCC;
-  width:75%
-}
-
-.content {
-  font-family: "Myriad Pro Light", "sans-serif";
-  font-size: 24px;
-  color: #DDDDDD;
-  font-weight: bold;
-  position: absolute;
-  background: rgba(0, 0, 0, 0.75);
-  padding-top: 20px; /* add 20 pixels of padding around the content */
-  padding-left: 20px; /* add 20 pixels of padding around the content */
-  padding-right: 20px; /* add 20 pixels of padding around the content */
-  padding-bottom: 20px; /* add 20 pixels of padding around the content */
-
-  top: 125px;
-  left: 10px; /* set the same value as the left property of .logo-container */
-  right: 20px; /* set the same value as the left property of .logo-container */
-  
-  transform: translate(5%,0);
-  width: 75%;
-  max-width: 720px; /* set the maximum width of the text container to 33% */
-  backdrop-filter: blur(20px);
-  overflow: hidden;
-
-  transition: transform 0.2s ease ;
-
-  max-height: calc(80vh); /* Adjust the height based on your needs, subtracting the height of the bottom_nav */
-  overflow: auto;
-  padding-bottom: 80px; /* Adjust the value to match the height of the bottom_nav */
-
-}
-p {
-  padding: 0;
-}
-hr {
-  border: none;
-  height: 2px;
-  background-color: #333;
-  
-  margin-top: 1px; 
-  margin-bottom: 1px;
-
-}
-
-.hr-sub {
-  border: none;
-  height: 1px;
-  background-color: #333;
-  margin-top: 1px;
-  margin-bottom: 1px;
-}
-
-.li-sub {
-  font-family: "Myriad Pro Light", sans-serif;;
-  font-size: 12px;
-  font-weight: normal;
-  color: #CCCCCC;
-}
-
-
-.subdiv {
-
-  width:75%;
-
-  margin-top: 1px;
-  margin-bottom: 1px;
-
-}
-
-.padding_div {
-  padding-bottom: 200px; /* add 20 pixels of padding around the content */
-    background: rgba(0, 0, 0, 1.0);
-
-}
-
-
-
-#engage_content {
-
-  transform: translate(-100%, 0%);
-  background: rgba(0, 0, 0, 0.0);
-  backdrop-filter: blur(0px);
-
-}
-
-body {
-  margin: 0;
-  font-family: Myriad Pro Light;
-  font-size: 1px;
-}
-
-#myVideo {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-
-.bottom_nav {
-    position: fixed;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.9);
-   
-    width: 100%;
-    padding: 20px;
-    z-index: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid #222222;
-}
-
-
-
-.social-icon {
-  font-size: 32px;
-  color: #acb5bb;
-  margin-right: 20px;
-}
-
-.bottom_text {
-font-family: "Myriad Pro Light", sans-serif;
-  font-size: 24px;
-  font-weight: bold;
-  margin-right: auto;
-  color: #acb5bb;
-
-}
-
-.bottom_text:hover
-{
-  color: #acb5bb;
-  cursor: pointer;
-}
-
-
-
-.social-icon:hover {
-  color: #1da1f2; /* Twitter blue */
-}
-
-.social-icon:last-child {
-  margin-right: 0;
-}
-
-.social-icon:nth-child(3) {
-  margin-left:5px;
-}
-
-.social-icon:nth-child(2) {
-  margin-left:5px;
-}
-
-.social-icon:nth-child(1) {
-  margin-left:5px;
-}
-
-a
-{
-  color: #acb5bb;
-}
-
-a:visited
-{
-  color: #acb5bb;
-}
-
-a:focus
-{
-  color: #acb5bb;
-}
-a:hover {
-  color: #1da1f2; /* Gmail red */
-}
-
-
-.social-icon:nth-child(1):hover {
-  color: #1da1f2; /* Gmail red */
-}
-
-.social-icon:nth-child(2):hover {
-  color: #1da1f2; /* Gmail red */
-}
-
-
-.social-icon:last-child {
-  margin-right: 0;
-}
-
-
-
-
-
-
-</style>
 </head>
 <body>
 
   <script src="https://kit.fontawesome.com/73d3ed437d.js" crossorigin="anonymous"></script>
- 
 
   <script>
 
@@ -339,7 +46,6 @@ a:hover {
    }
 
   </script>
-  
 
   <div class="logo-container" >
     <img class="logo" onclick=show_content("intro_content") src="assets/wn_logo_white.png" alt="wavenumber logo">
@@ -395,12 +101,10 @@ a:hover {
     </div>
 
 	
-	
     <div class="content" id="engage_content">
       <h2>Engage</h2>  
 	  <hr>	
 	  	<div class = "subdiv">
-	
   
 		<p class="regular-text">
 			 We enage with customers at all stages of the product design and engineering process.   A typical scope of work can include:
