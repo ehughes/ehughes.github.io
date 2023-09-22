@@ -109,7 +109,7 @@
     left: 10px; /* set the same value as the left property of .logo-container */
     right: 20px; /* set the same value as the left property of .logo-container */
     
-    transform: translate(5%,0);
+    transform: translate(5%,5%);
     width: 75%;
     max-width: 720px; /* set the maximum width of the text container to 33% */
     backdrop-filter: blur(20px);
@@ -161,8 +161,8 @@
   }
   
   .padding_div {
-    padding-bottom: 200px; /* add 20 pixels of padding around the content */
-      background: rgba(0, 0, 0, 1.0);
+    padding-bottom: 100px; /* add 20 pixels of padding around the content */
+      background: rgba(0, 0, 0, .5);
   
   }
   
