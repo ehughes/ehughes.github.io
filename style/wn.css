@@ -107,9 +107,9 @@
   .regular-text {
   
     font-family: "Myriad Pro Light", sans-serif;;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: normal;
-    color: #241818;
+    color: #CCCCCC;
   }
   
   .short {
@@ -153,7 +153,7 @@
   hr {
     border: none;
     height: 2px;
-    background-color: #333;
+    background-color: #3f4657;
     
     margin-top: 1px; 
     margin-bottom: 1px;
@@ -163,7 +163,7 @@
   .hr-sub {
     border: none;
     height: 1px;
-    background-color: #333;
+    background-color: #3d4854;
     margin-top: 1px;
     margin-bottom: 1px;
   }
