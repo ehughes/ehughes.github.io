@@ -6,7 +6,6 @@
     overflow: auto; /* Hide scrollbars */
   }
 
-
   ::-webkit-scrollbar {
     width: 5px;
   }
@@ -100,10 +99,18 @@
     margin-bottom:  2px;
    }
    
+   p {
+
+    font-family: "Myriad Pro Light", sans-serif;;
+    font-size: 12px;
+    font-weight: normal;
+    color: #CCCCCC;
+   }
+
   .regular-text {
   
     font-family: "Myriad Pro Light", sans-serif;;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: normal;
     color: #CCCCCC;
   }
@@ -145,9 +152,7 @@
     padding-bottom: 80px; /* Adjust the value to match the height of the bottom_nav */
   
   }
-  p {
-    padding: 0;
-  }
+
   hr {
     border: none;
     height: 2px;
