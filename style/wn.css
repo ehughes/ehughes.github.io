@@ -6,6 +6,18 @@
     overflow: auto; /* Hide scrollbars */
   }
 
+  .engage-background {
+    /* Set the background image */
+    background-image: url('../assets/bg1.jpg'); /* Replace 'path-to-your-image.jpg' with your image file path */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Fixed background */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+    height: 100vh; /* Set the body height to the viewport height */
+    overflow: hidden; /* Hide overflow content */
+  }
+
   ::-webkit-scrollbar {
     width: 5px;
   }
@@ -25,19 +37,35 @@
     background: #555; 
   }
 
-  .logo-container {
+  .top_nav {
     position: fixed;
-    top: 10px;
-    left: 10px;
-    
+     background: rgba(0, 0, 0, .5);
+     opacity: 0.9;
+     width: 100%;
+     z-index: 1;
+     top: 0;
+     display: flex;
+   }
+   
+   body {
+    margin: 0;
+    font-family: Myriad Pro Light;
+    font-size: 14px;
+
+  }
+
+  .logo-container
+   {
+ 
+  
     display: inline-flex;
     flex-direction: column;
     align-items: left;
     opacity: 0.9;
     z-index: 1;
-    padding: 0px;
+    margin: 10px;
     cursor: pointer;
-    
+
     touch-action: manipulation;
     -webkit-tap-highlight-color: transparent;
   
@@ -55,8 +83,7 @@
     touch-action: manipulation;
     outline: none !important;
   }
-  
-  
+    
   .logo {
     width: 100px; /* set the width of your logo */
     height: auto;
@@ -67,9 +94,30 @@
     font-size: 18px;
     color: #ffffff;
     margin-top: 5px;
+    margin-bottom: 5px;
     text-align: left;
   }
   
+  
+  .bottom_nav {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);
+    opacity: 0.9;
+    width: 100%;
+    padding: 10px;
+
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #222222;
+}
+
+  .padding_div {
+    padding-bottom: 100px; /* add 20 pixels of padding around the content */
+     background: rgba(0, 0, 0, .5);
+   }
   
   
   h1 
@@ -83,7 +131,7 @@
    h2
    {
     font-family: "Myriad Pro Light", sans-serif;;
-    font-size: 28px;
+    font-size: 24px;
     margin-top: 2px;
     margin-bottom:  2px;
    }
@@ -98,20 +146,15 @@
    
    p {
 
-    font-family: "Myriad Pro Light", sans-serif;;
-    font-size: 12px;
-    font-weight: normal;
-    color: #CCCCCC;
-   }
-
-  .regular-text {
-  
+    padding: 5px;
     font-family: "Myriad Pro Light", sans-serif;;
     font-size: 14px;
+    margin : 0px;
     font-weight: normal;
     color: #CCCCCC;
-  }
-  
+    
+   }
+
   .short {
     font-family: "Myriad Pro Light", sans-serif;;
     font-size: 12px;
@@ -126,17 +169,16 @@
     color: #DDDDDD;
     font-weight: bold;
     position: absolute;
-    background: rgba(0, 0, 0, 0.75);
-    padding-top: 20px; /* add 20 pixels of padding around the content */
+    background: rgba(0, 0, 0, 0.3);
+    padding-top: px; /* add 20 pixels of padding around the content */
     padding-left: 20px; /* add 20 pixels of padding around the content */
     padding-right: 20px; /* add 20 pixels of padding around the content */
     padding-bottom: 20px; /* add 20 pixels of padding around the content */
   
-    top: 125px;
-    left: 10px; /* set the same value as the left property of .logo-container */
+    top: 128px;
+    left: 20px; /* set the same value as the left property of .logo-container */
     right: 20px; /* set the same value as the left property of .logo-container */
-    
-    transform: translate(5%,5%);
+    bottom: 80px;
     width: 75%;
     max-width: 720px; /* set the maximum width of the text container to 33% */
     backdrop-filter: blur(20px);
@@ -144,10 +186,8 @@
   
     transition: transform 0.2s ease ;
   
-    max-height: calc(80vh); /* Adjust the height based on your needs, subtracting the height of the bottom_nav */
     overflow: auto;
-    padding-bottom: 80px; /* Adjust the value to match the height of the bottom_nav */
-  
+    
   }
 
   hr {
@@ -170,15 +210,73 @@
   
   .li-sub {
     font-family: "Myriad Pro Light", sans-serif;;
-    font-size: 12px;
-    font-weight: normal;
-    color: #CCCCCC;
+    font-size: 14px;
+    font-weight: bold;
+    color: #e1e1e1;
   }
   
-  
+  .m1l {
+    border-style: solid;
+  border-width: thin;
+
+    border-color: #3d4854;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    padding:10px;
+    border-radius: 0%;
+    border-left:solid rgb(58, 57, 57) 2px;
+    border-right:solid rgb(58, 57, 57) 0px;
+    border-top:solid rgb(58, 57, 57) 2px;
+    border-bottom:solid rgb(58, 57, 57) 0px;
+  }
+  .m1r {
+    border-style: solid;
+  border-width: thin;
+
+    border-color: #3d4854;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    padding:10px;
+    border-radius: 0%;
+    border-left:solid rgb(58, 57, 57) 0px;
+    border-right:solid rgb(58, 57, 57) 2px;
+    border-top:solid rgb(58, 57, 57) 2px;
+    border-bottom:solid rgb(58, 57, 57) 0px;
+  }
+
+  .m2l {
+    border-style: solid;
+  border-width: thin;
+
+    border-color: #3d4854;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    padding:2px;
+    border-radius: 0%;
+    border-left:solid rgb(58, 57, 57) 1px;
+    border-right:solid  rgb(58, 57, 57) 0px;
+    border-top:solid  rgb(58, 57, 57) 1px;
+    border-bottom:solid  rgb(58, 57, 57) 0px;
+  }
+
+  .m2r {
+    border-style: solid;
+  border-width: thin;
+
+    border-color: #3d4854;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    padding:2px;
+    border-radius: 0%;
+    border-left:solid rgb(58, 57, 57) 0px;
+    border-right:solid  rgb(58, 57, 57) 1px;
+    border-top:solid  rgb(58, 57, 57) 1px;
+    border-bottom:solid  rgb(58, 57, 57) 0px;
+  }
+
   .subdiv {
   
-    width:75%;
+    width:85%;
   
     margin-top: 1px;
     margin-bottom: 1px;
@@ -187,11 +285,9 @@
   
   .padding_div {
     padding-bottom: 100px; /* add 20 pixels of padding around the content */
-      background: rgba(0, 0, 0, .5);
-  
-  }
-  
-  
+     background: rgba(0, 0, 0, .5);
+   }
+   
   
   #engage_content {
   
@@ -201,13 +297,9 @@
   
   }
   
-  body {
-    margin: 0;
-    font-family: Myriad Pro Light;
-    font-size: 1px;
-  }
+
   
-  #myVideo {
+  #landing_page_video {
     position: fixed;
     top: 0;
     left: 0;
@@ -217,20 +309,7 @@
     z-index: -1;
   }
   
-  .bottom_nav {
-      position: fixed;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.9);
-     
-      width: 100%;
-      padding: 20px;
-      z-index: 1;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-top: 1px solid #222222;
-  }
-  
+
   
   
   .social-icon {

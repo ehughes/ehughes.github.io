@@ -6,16 +6,12 @@
   <meta http-equiv="refresh" content="300">
   <meta http-equiv="expires" content="0">
   <title>Wavenumber LLC</title>
-
   <link rel="stylesheet" href="style/wn.css">
-
 </head>
-<body>
+<body class="engage-background">
 
   <script src="https://kit.fontawesome.com/73d3ed437d.js" crossorigin="anonymous"></script>
-
   <script>
-
 
 
    var currentContent = "intro_content";
@@ -27,49 +23,24 @@
 			viewport.setAttribute('content', 'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no');
 		}
 
-   show_content(currentContent)
-
-   function show_content(content)
-   {
-
-        hide_content(currentContent)
-        currentContent = content;
-
-        var c = document.getElementById(content); 
-        c.style.transform =     "translateX(5%)";
-        c.style.background =    "rgba(0, 0, 0, 0.5)";
-        c.style.backdropFilter = "blur(10px)";
-   }
-
-   function hide_content(content)
-   {
-        var c = document.getElementById(content); 
-        c.style.transform =     "translateX(-100%)";
-        c.style.background =    "rgba(0, 0, 0, 0.0)";
-        c.style.backdropFilter = "blur(0px)";
-   }
-
-   function engage(show)
-   {
-       show_content("engage_content")
-   }
-
   </script>
 
-  <div class="logo-container" >
-    <img class="logo" onclick=show_content("intro_content") src="assets/wn_logo_white.png" alt="wavenumber logo">
-   	<p class="tagline">Wavenumber</p>
+<div class="top_nav">
+	<div class="logo-container" >
+		<img class="logo" onclick="window.location.href='index.html';" src="assets/wn_logo_white.png" alt="wavenumber logo">
+		<p class="tagline">Wavenumber</p>
+	</div>
   </div>
   
-    <video autoplay muted loop id="myVideo">
+    <video autoplay muted loop id="landing_page_video">
     <source src="assets/back.mp4" type="video/mp4">
       Your browser does not support HTML5 video.
     </video>
   
-    <div class="content" id="intro_content">
+    <div class="content">
       <h1>Tell your story</h1> 
-	  <hr>
 
+	  <div class = "m1l">
 	  <p class="regular-text">
 
 		Wavenumber is a “full-stack” product design and communication organization.  
@@ -81,94 +52,47 @@
    	  <p class="regular-text">We value real, honest relationships and take our work seriously. Successful outcomes are achieved
 		through application of our "full-stack" values.</p>
 	  
-		<div class = "subdiv">
+		<br>
+		
 		   <h2> Create</h2>
-		   <hr class = "hr-sub">	
-		   <p class="regular-text">
-			Understand that you literally become what you think about. Bring to the world that which is not. Move toward how we want out things to be.  Take action,  collaborate and build teams.   Iterate and refine.    Be resilient and persevere.     
-			</p>
+		   <div class = "m2r">
+		 	 <p class="regular-text">
+				Understand that you literally become what you think about. Bring to the world that which is not. Move toward how we want out things to be.  Take action,  collaborate and build teams.   Iterate and refine.    Be resilient and persevere.     
+			 </p>
+			</div>
 
 			<h2>Communicate</h2>
-		    <hr class = "hr-sub">	
-			<p class="regular-text">
-			Tell stories about the “why” and connect to a purpose.  Freely give what we know and embrace a mindset of generosity.   Actively listen and be ready take the role of student and teacher.  Become comfortable with being vulnerable.
-			</p>
+			<div class = "m2r">
+				<p class="regular-text">
+					Tell stories about the “why” and connect to a purpose.  Freely give what we know and embrace a mindset of generosity.   Actively listen and be ready take the role of student and teacher.  Become comfortable with being vulnerable.
+				</p>
+			</div>
 			
 			<h2>Serve</h2>
-			<hr class = "hr-sub">	
+			<div class = "m2r">
 			<p class="regular-text">
 			Be the best by helping others be their best.  Cultivate empathy and express gratitude.     Give more than you ever expect to receive.   Lead through service to others.    Enable and empower others.
 			</p>
-			
-		</div>
-
+			</div>
 	<br>
-	 <b> When we are doing these three things, everyone wins.</b>
+	
 
-	  
+	</div>
+	<center>
+	  <b> When we are doing these three things, everyone wins.</b> 
+	</center>
     </div>
- 
-
 
 	
-    <div class="content" id="engage_content">
-      <h2>Full-stack engagement</h2>  
-	  <hr>	
-	  	<div class = "subdiv">
-  
-		<p class="regular-text">We are a team bound by principles, not just technical acumen. What makes us different is mindset. We strive for the best outcomes using two core principles.</p>
-	  
-		<div class = "subdiv">
-			<h3>Growth</h3>
-		    <hr class = "hr-sub">	
-			<p class="regular-text">
-				Freely give what you know and embrace a mindset of generosity. Eschew the scarcity mindset. Consider what you can add instead of what is available to take.
-			</p>
-			
-		   <h3>Ownership</h3>
-		   <hr class = "hr-sub">	
-		   <p class="regular-text">
-			Take complete ownership of outcomes. Do what you say and make sure your word means something.   Learn from failure and be ready to grow.   Be accountable and do what is right even when no one is looking.  
-			</p>
-		</div>
-  
-   <h2>Offering</h2>  
-	  <hr>	
-	  
-		<p class="regular-text">
-			 We engage with customers at all stages of the product design process.  We feel that product design can be aligned to sales, marketing and communication to achieve maximum results.
-
-			 A typical scope of work can include:
-	    </p>
-		<ul class = "li-sub">
-			  <li>Product ideation and story telling</li>
-			  <li>Proof of concept prototyping</li>
-			  <li>Content creation and communication</li>
-			  <li>Technical design reviews</li>
-			  <li>Industrial design</li>
-			  <li>Electronics engineering and circuit board design</li>
-			  <li>Firmware/software development</li>
-			  <li>Design for manufacture</li>
-
-			</ul>
-		<p class="regular-text">
-			Please reach out via using the communication channels below to start a conversation.
-		</p>
-	 </div>
-   	   
-   </div>
-
-	<div class ="padding_div">
-
+   
 	</div>
     <div class="bottom_nav">
 		
-	  <div class="bottom_text" onclick=engage()>Engage</div>
+	  <div class="bottom_text" onclick="window.location.href='engage.html';">Engage</div>
       <div class="social-icons">
 	  <a href="#" onclick="location.href='mailto:'+String.fromCharCode(101,104,117,103,104,101,115,64,119,97,118,101,110,117,109,98,101,114,46,110,101,116); return false;" class="social-icon"><i class="fas fa-envelope"></i></a>
         <a href="https://twitter.com/emh203" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
         <a href="https://www.linkedin.com/in/wavenumber/" class="social-icon"><i class="fab fa-linkedin"></i></a>
-		
       </div>
     </div>
 
