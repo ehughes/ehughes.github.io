@@ -6,7 +6,7 @@
     overflow: auto; /* Hide scrollbars */
   }
 
-  .engage-background {
+  .static_background {
     /* Set the background image */
     background-image: url('../assets/bg1.jpg'); /* Replace 'path-to-your-image.jpg' with your image file path */
     background-size: cover; /* Cover the entire viewport */
@@ -19,7 +19,7 @@
   }
 
   ::-webkit-scrollbar {
-    width: 5px;
+    width: 3px;
   }
   
   /* Track */
@@ -88,16 +88,6 @@
     width: 100px; /* set the width of your logo */
     height: auto;
   }
-  
-  .tagline {
-    font-family: "Myriad Pro Light", sans-serif;
-    font-size: 18px;
-    color: #ffffff;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    text-align: left;
-  }
-  
   
   .bottom_nav {
     position: fixed;
@@ -185,12 +175,11 @@
     overflow: hidden;
   
     transition: transform 0.2s ease ;
-  
     overflow: auto;
-    
+   
   }
 
-  hr {
+  .content hr {
     border: none;
     height: 2px;
     background-color: #3f4657;
@@ -208,7 +197,7 @@
     margin-bottom: 1px;
   }
   
-  .li-sub {
+  .content li {
     font-family: "Myriad Pro Light", sans-serif;;
     font-size: 14px;
     font-weight: bold;
@@ -297,8 +286,6 @@
   
   }
   
-
-  
   #landing_page_video {
     position: fixed;
     top: 0;
@@ -308,9 +295,6 @@
     object-fit: cover;
     z-index: -1;
   }
-  
-
-  
   
   .social-icons {
     font-size: 32px;
