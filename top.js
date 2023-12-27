@@ -2,6 +2,13 @@ var topNavigationHTML = `
   <div class="logo-container">
     <img class="logo" onclick="window.location.href='index.html';" src="assets/logo.png" alt="Wavenumber logo">
   </div>
+
+  <div class="navigation-links">
+    <a class="nav-link" href="engage.html">Offering</a>
+    <a class="nav-link" href="engage.html">Articles</a>
+    <a class="nav-link" href="engage.html">Projects</a>
+  </div>
+
 `;
 
 function includeTopNavigation() {

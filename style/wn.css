@@ -1,4 +1,9 @@
-* {
+@import url('./style/top_nav.css');
+
+
+
+
+{
     box-sizing: border-box;
   }
   
@@ -170,7 +175,7 @@
     right: 20px; /* set the same value as the left property of .logo-container */
     bottom: 80px;
     width: 75%;
-    max-width: 720px; /* set the maximum width of the text container to 33% */
+    max-width: 1200px; /* set the maximum width of the text container to 33% */
     backdrop-filter: blur(20px);
     overflow: hidden;
   
@@ -179,6 +184,16 @@
    
   }
 
+/* Add the media query for .content here */
+@media (max-width: 768px) {
+  /* Centering styles for screens up to 768px wide (typical mobile devices) */
+  .content {
+    max-width: auto; /* set the maximum width of the text container to 33% */
+   
+    width: auto; /* Reset the width */
+    padding: 20px; /* Add padding for mobile */
+  }
+}
   .content hr {
     border: none;
     height: 2px;
@@ -370,7 +385,30 @@
   .social-icon:last-child {
     margin-right: 0;
   }
+
   
-  
-  
-  
+  /* CSS for the navigation links */
+.navigation-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Push the links to the right */
+  flex-grow: 1; /* Allow links to grow and occupy available space */
+  gap: 10px; /* Adjust the spacing between links */
+  margin-right: 20px;
+}
+
+.nav-link {
+  font-family: "Myriad Pro Light", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #CCCCCC;
+  text-decoration: none;
+}
+
+/* Change font weight to bold on hover */
+.nav-link:hover {
+  font-weight: bold;
+  font-size: 16px;
+  color: #1da1f2; /* Change color on hover */
+  transition: linear 0.2s;
+}
