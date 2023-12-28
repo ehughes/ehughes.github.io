@@ -1,12 +1,8 @@
-@import url('./style/top_nav.css');
 
-
-
-
-{
-    box-sizing: border-box;
-  }
-  
+* {
+  box-sizing: border-box;
+ }
+ 
   html, body {
     overflow: auto; /* Hide scrollbars */
   }
@@ -68,7 +64,7 @@
     align-items: left;
     opacity: 0.9;
     z-index: 1;
-    margin: 10px;
+    margin: 5px;
     cursor: pointer;
 
     touch-action: manipulation;
@@ -90,8 +86,8 @@
   }
     
   .logo {
-    width: 100px; /* set the width of your logo */
-    height: auto;
+    height: 96px; /* set the width of your logo */
+    width: auto;
   }
   
   .bottom_nav {
@@ -108,12 +104,7 @@
     align-items: center;
     border-top: 1px solid #222222;
 }
-
-  .padding_div {
-    padding-bottom: 100px; /* add 20 pixels of padding around the content */
-     background: rgba(0, 0, 0, .5);
-   }
-  
+ 
   
   h1 
   {
@@ -191,8 +182,14 @@
     max-width: auto; /* set the maximum width of the text container to 33% */
    
     width: auto; /* Reset the width */
-    padding: 20px; /* Add padding for mobile */
+ 
   }
+
+  .logo {
+    height: 72px; /* set the width of your logo */
+    width: auto;
+  }
+
 }
   .content hr {
     border: none;
@@ -277,20 +274,6 @@
     border-top:solid  rgb(58, 57, 57) 1px;
     border-bottom:solid  rgb(58, 57, 57) 0px;
   }
-
-  .subdiv {
-  
-    width:85%;
-  
-    margin-top: 1px;
-    margin-bottom: 1px;
-  
-  }
-  
-  .padding_div {
-    padding-bottom: 100px; /* add 20 pixels of padding around the content */
-     background: rgba(0, 0, 0, .5);
-   }
    
   
   #engage_content {
@@ -319,7 +302,7 @@
   
   .bottom_text {
   font-family: "Myriad Pro Light", sans-serif;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
     margin-right: auto;
     color: #acb5bb;
