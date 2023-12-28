@@ -180,7 +180,7 @@
   /* Centering styles for screens up to 768px wide (typical mobile devices) */
   .content {
     max-width: auto; /* set the maximum width of the text container to 33% */
-   
+    top: 96px;
     width: auto; /* Reset the width */
  
   }
