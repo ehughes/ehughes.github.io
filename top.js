@@ -5,8 +5,6 @@ var topNavigationHTML = `
 
   <div class="navigation-links">
     <a class="nav-link" href="engage.html">Offering</a>
-    <a class="nav-link" href="engage.html">Articles</a>
-    <a class="nav-link" href="engage.html">Projects</a>
   </div>
 
 `;
