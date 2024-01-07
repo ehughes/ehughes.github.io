@@ -6,6 +6,8 @@
   <meta http-equiv="refresh" content="300">
   <meta http-equiv="expires" content="0">
   <title>Wavenumber LLC</title>
+  <link rel="stylesheet" href="https://use.typekit.net/ukq6odx.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
   <link rel="stylesheet" href="style/wn.css">
 </head>
 
@@ -17,6 +19,18 @@
 
    var currentContent = "intro_content";
 
+// Select an element you want to check the font for
+const elementToCheck = document.querySelector('body');
+
+// Get the computed font family of the element
+const computedFont = window.getComputedStyle(elementToCheck).fontFamily;
+
+// Check if the computed font matches your specified font
+if (computedFont.includes('mp')) {
+  console.log('Font successfully loaded.');
+} else {
+  console.log('Font could not be loaded. Using fallback font.');
+}
 
 
 
