@@ -391,14 +391,15 @@ body{
   display: flex;
   align-items: center;
   text-align: left;
-    align-items: flex-start; /* Align items to the top of the container */
+  align-items: flex-start; /* Align items to the top of the container */
    
   padding: 10px;
 }
 
 .offering_img img {
-  width: 128px;
-  height: 128px;
+
+  max-width: 128px;
+
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -407,6 +408,19 @@ body{
   margin-top: 1px;
 }
 
+.offering_text p{
+padding: 0px;
+}
 .reversed {
   flex-direction: row-reverse; /* Reverse the order of items (image and text) */
 }
+
+@media (max-width: 768px) 
+{
+
+  .offering_img img {
+
+    max-width: 64px;
+  }
+}
+
