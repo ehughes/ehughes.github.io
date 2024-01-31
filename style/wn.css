@@ -1,6 +1,6 @@
 
 body{
-  font-family: "myriad-pro",'Segoe UI','Roboto',sans-serif;
+  font-family: 'Segoe UI','Roboto',sans-serif;
 }
 
 * {
@@ -408,7 +408,7 @@ body{
   margin-top: 1px;
 }
 
-.offering_text p{
+.offering_text p {
 padding: 0px;
 }
 .reversed {
